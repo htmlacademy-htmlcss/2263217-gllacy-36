@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Илья Петрищев](https://up.htmlacademy.ru/htmlcss/36/user/2263217).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
