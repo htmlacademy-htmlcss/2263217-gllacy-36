@@ -1,0 +1,191 @@
+/* подключение шрифтов */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* скрытие семантических тегов
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+/* стилизация */
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  color: #2D3440;
+  background: #FEAFC3;
+}
+
+nav {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav-tel {
+  font-weight: 700;
+}
+
+.nav-user {
+  font-size: 14px;
+}
+
+.slider-list-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-list-desc {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.gifts-title, .fillings-title, .about-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gift-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gift-text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.filling-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.filling-desc {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #565C66;
+}
+
+.filling-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-desc, .newsletter-desc, .delivery-desc, .delivery-form-desc, .contacts-address-desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.article-news {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.article-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.form-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-form-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-address-data {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-tel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.footer-menu-item {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-menu-item-b {
+  font-weight: 700;
+}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+}

@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: "Глейси"</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
+    <!-- Шапка -->
     <header class="page-header">
       <nav class="nav">
         <a class="nav-logo" href="index.html">
@@ -30,7 +33,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span class="visually-hidden">Вход.</span>
+              <span>Вход</span>
             </a>
           </li>
           <li class="nav-item">
@@ -43,8 +46,11 @@
     </header>
 
     <main class="main-index">
+
+      <!--Главный заголовок -->
       <h1 class="visually-hidden">Магазин мороженого Gllacy Shop.</h1>
 
+      <!-- Слайдер мороженого -->
       <section class="slider">
         <h2 class="visually-hidden">Мороженое.</h2>
         <button class="slider-button slider-prev" type="button">
@@ -63,7 +69,7 @@
             <img src="images/strawberry-ice.png" width="327.15" height="507">
             <img src="images/banana-ice-mini.png" width="66" height="150">
             <img src="images/caramel-ice-mini.png" width="66" height="150">
-            <a href="#" class="slide-list-button">Заказать</a>
+            <a href="#" class="slide-list-button main-btn">Заказать</a>
           </li>
           <li class="slider-list-item slide-2">
             <h3 class="slider-list-title">Сливочное мороженое <br>
@@ -72,7 +78,7 @@
             <img src="images/banana-ice.png" width="312" height="507">
             <img src="images/caramel-ice-mini.png" width="66" height="150">
             <img src="images/strawberry-ice-mini.png" width="66" height="150">
-            <a href="#" class="slide-list-button">Заказать</a>
+            <a href="#" class="slide-list-button main-btn">Заказать</a>
           </li>
           <li class="slider-list-item slide-3">
             <h3 class="slider-list-title">Карамельный пломбир <br>
@@ -81,7 +87,7 @@
             <img src="images/caramel-ice.png" width="350" height="507">
             <img src="images/strawberry-ice-mini.png" width="66" height="150">
             <img src="images/banana-ice-mini.png" width="66" height="150">
-            <a href="#" class="slide-list-button">Заказать</a>
+            <a href="#" class="slide-list-button main-btn">Заказать</a>
           </li>
         </ul>
 
@@ -125,15 +131,16 @@
         </div>
       </section>
 
+      <!-- Подарки -->
       <section class="gift">
         <h2 class="visually-hidden">Подарки.</h2>
-        <h3 class="gift-title">Заказывайте мороженое и получайте подарки!</h3>
+        <h3 class="gifts-title">Заказывайте мороженое и получайте подарки!</h3>
         <ul class="gift-list">
           <li class="gift-item">
             <div class="gift-1">
               <h4 class="gift-title">Малинка даром!</h4>
               <p class="gift-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="action" href="#">Хочу подарок</a>
+              <a class="action main-btn" href="#">Хочу подарок</a>
             </div>
             <img src="images/raspberry.png" height="268" width="219" alt="Малина в рожке.">
           </li>
@@ -141,16 +148,17 @@
             <div class="gift-2">
               <h4 class="gift-title">Маршмеллоу даром!</h4>
               <p class="gift-desc">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-              <a class="action" href="#">Хочу подарок</a>
+              <a class="action main-btn" href="#">Хочу подарок</a>
             </div>
             <img src="images/marshmallow.png" height="268" width="219" alt="Маршмеллоу в рожке.">
           </li>
         </ul>
       </section>
 
+      <!-- Начинки -->
       <section class="filling">
         <h2 class="visually-hidden">Начинки.</h2>
-        <h3 class="filling-title">Попробуйте самые популярные вкусы нашего мороженого</h3>
+        <h3 class="fillings-title">Попробуйте самые популярные вкусы нашего мороженого</h3>
         <div class="filling-box">
           <ul  class="filling-list">
             <li class="filling-item">
@@ -193,6 +201,7 @@
         </div>
       </section>
 
+      <!-- О компании -->
       <section class="about">
         <h2 class="visually-hidden">Описание магазина.</h2>
         <h3 class="about-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
@@ -215,6 +224,7 @@
         </ul>
       </section>
 
+      <!-- Последняя публикация и подписка на рассылку -->
       <article class="news">
         <h2 class="visually-hidden">Новости и рассылка.</h2>
         <div class="articles">
@@ -228,37 +238,40 @@
           <form class="newsletter-form" action="#" method="post">
             <label for=”input-id” class=”visually-hidden">Поле ввода почты</label>
             <input id=”input-id” type="email" name="mail" placeholder="email@example.com" required>
-            <button class="feedback" type="submit">Отправить</button>
+            <button class="form-btn" type="submit">Отправить</button>
           </form>
         </div>
       </article>
 
+      <!-- Доставка -->
       <section class="delivery">
         <h2 class="visually-hidden">Доставка.</h2>
         <h3 class="delivery-title">Доставка любимого мороженого на дом</h3>
         <p class="delivery-desc">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <label>Дата<input type="text" name="date" placeholder="01.04.2020"></label>
-          <label>Телефон<input type="tel" name="tel" placeholder="+7 800 999-00-00"></label>
-          <label>Адрес<input type="text" name="address" placeholder="ул. Большая Конюшенная 19/8"></label>
-          <button class="feedback" type="submit">Отправить</button>
+          <p class="delivery-form-desc">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <label class="delivery-form-label">Дата<input type="text" name="date" placeholder="01.04.2020"></label>
+          <label class="delivery-form-label">Телефон<input type="tel" name="tel" placeholder="+7 800 999-00-00"></label>
+          <label class="delivery-form-label">Адрес<input type="text" name="address" placeholder="ул. Большая Конюшенная 19/8"></label>
+          <button class="form-btn" type="submit">Отправить</button>
         </form>
       </section>
 
+      <!-- Контакты и обратная связь -->
       <article class="contacts">
         <h2 class="visually-hidden">Адрес и обратная связь.</h2>
         <address class="contacts-address">
           <p class="contacts-address-desc">Адрес главного офиса и офлайн-магазина:</p>
           <p class="contacts-address-data">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
           <p class="contacts-address-desc">Для заказов по телефону:</p>
-          <a class="contacts-tel" href="tel:+78128121212">+7 (812) 812-12-12</p>
+          <a class="contacts-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <p class="contacts-desc">(с 10 до 20 ежедневно)</p>
-        <a class="button button-feedback" href="#">Форма обратной связи</a>
+        <a class="form-btn" href="#">Форма обратной связи</a>
       </article>
     </main>
 
+    <!-- Подвал -->
     <footer>
       <div class="social">
         <h2 class="visually-hidden">Социальные сети.</h2>
@@ -281,7 +294,7 @@
         </ul>
       </div>
       <ul class="footer-menu-list">
-        <li class="footer-menu-item"><a href="#"><b>Для поставщиков</b></a></li>
+        <li class="footer-menu-item footer-menu-item-b"><a href="#">Для поставщиков</a></li>
         <li class="footer-menu-item"><a href="#">Наши документы</a></li>
         <li class="footer-menu-item"><a href="#">О производстве</a></li>
         <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
