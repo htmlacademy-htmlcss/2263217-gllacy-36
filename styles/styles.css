@@ -39,15 +39,46 @@
 
 /* стилизация */
 body {
-  font-family: "Inter", "Arial", sans-serif;
-  font-weight: 400;
-  margin-top: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #2D3440;
-  background: #FEAFC3;
+  background-color: #FEAFC3;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* изображения на главной */
+.about {
+  background: url(../images/wafer-border.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.article {
+  background: url(../images/news.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.newsletter {
+  background: url(../images/mail-border.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.delivery {
+  background: url(../images/delivery.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.contacts {
+  background: url(../images/contacts.png) no-repeat;
+  background-size: 100% auto;
+}
+
+/* шрифты на главной */
 nav {
-  font-size: 16px;
   line-height: 20px;
 }
 
@@ -72,7 +103,6 @@ nav {
 
 .main-btn {
   font-weight: 700;
-  font-size: 16px;
   line-height: 20px;
   text-align: center;
 }
@@ -90,34 +120,25 @@ nav {
   line-height: 30px;
 }
 
-.gift-text {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.filling-title {
+.filling-title, .card-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
 }
 
-.filling-desc {
-  font-size: 16px;
-  line-height: 22px;
+.filling-desc, .card-desc {
   text-align: center;
   color: #565C66;
 }
 
-.filling-price {
+.filling-price, .card-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
 .about-desc, .newsletter-desc, .delivery-desc, .delivery-form-desc, .contacts-address-desc {
-  font-size: 16px;
-  line-height: 22px;
   color: #565C66;
 }
 
@@ -136,7 +157,6 @@ nav {
 
 .form-btn {
   font-weight: 700;
-  font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #FCFCFC;
@@ -150,7 +170,6 @@ nav {
 
 .delivery-form-label {
   font-weight: 700;
-  font-size: 16px;
   line-height: 20px;
 }
 
@@ -188,4 +207,31 @@ nav {
 .copyright-text {
   font-size: 12px;
   line-height: 16px;
+}
+
+/* каталог */
+.breadcrumbs-item, .filter-btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-item-underline {
+  text-decoration: underline;
+}
+
+.main-catalog-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.filter-group {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-item {
+  font-size: 16px;
+  line-height: 20px;
 }
