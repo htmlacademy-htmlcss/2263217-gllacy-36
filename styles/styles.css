@@ -46,8 +46,7 @@ body {
   background-color: #FEAFC3;
 }
 
-.nav-logo, .nav-link, .nav-tel, .main-btn, .social-link, .filling-shop-cart, .article-title, .contacts-tel,
-.form-link, .footer-menu-link, .logo-htmlacademy, .breadcrumbs-link, .card-link, .card-button, .pagination-link {
+.common-link {
   text-decoration: none;
   color: inherit;
 }
