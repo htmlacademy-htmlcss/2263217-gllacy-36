@@ -46,39 +46,40 @@ body {
   background-color: #FEAFC3;
 }
 
-a {
+.nav-logo, .nav-link, .nav-tel, .main-btn, .social-link, .filling-shop-cart, .article-title, .contacts-tel,
+.form-link, .footer-menu-link, .logo-htmlacademy, .breadcrumbs-link, .card-link, .card-button, .pagination-link {
   text-decoration: none;
   color: inherit;
 }
 
 /* изображения на главной */
 .about {
-  background: url(../images/wafer-border.png) no-repeat;
+  background: url("../images/wafer-border.png") no-repeat;
   background-size: 100% auto;
 }
 
 .article {
-  background: url(../images/news.png) no-repeat;
+  background: url("../images/news.png") no-repeat;
   background-size: 100% auto;
 }
 
 .newsletter {
-  background: url(../images/mail-border.png) no-repeat;
+  background: url("../images/mail-border.png") no-repeat;
   background-size: 100% auto;
 }
 
 .delivery {
-  background: url(../images/delivery.png) no-repeat;
+  background: url("../images/delivery.png") no-repeat;
   background-size: 100% auto;
 }
 
 .contacts {
-  background: url(../images/contacts.png) no-repeat;
+  background: url("../images/contacts.png") no-repeat;
   background-size: 100% auto;
 }
 
 /* шрифты на главной */
-nav {
+.nav {
   line-height: 20px;
 }
 
