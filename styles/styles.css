@@ -23,7 +23,7 @@
   font-display: swap;
 }
 
-/* скрытие семантических тегов
+/* скрытие семантических тегов */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,7 +35,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 /* стилизация */
 body {
@@ -244,4 +244,10 @@ body {
 .pagination-item {
   font-size: 16px;
   line-height: 20px;
+}
+
+/* сетка */
+.container {
+  margin: 0 auto;
+  width: 1366px;
 }
