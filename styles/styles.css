@@ -55,35 +55,35 @@ body {
 .about {
   background: url("../images/wafer-border.png") no-repeat;
   width: 1170px;
-  height: 480px;
+  min-height: 480px;
   border-radius: 16px;
 }
 
 .article {
   background: url("../images/news.png") no-repeat;
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   border-radius: 16px;
 }
 
 .newsletter {
   background: url("../images/mail-border.png") no-repeat;
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   border-radius: 16px;
 }
 
 .delivery {
   background: url("../images/delivery.png") no-repeat;
   width: 1170px;
-  height: 534px;
+  min-height: 534px;
   border-radius: 16px;
 }
 
 .contacts {
   background: url("../images/contacts.png") no-repeat;
   width: 1170px;
-  height: 492px;
+  min-height: 492px;
   border-radius: 16px;
 }
 
