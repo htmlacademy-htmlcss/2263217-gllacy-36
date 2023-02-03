@@ -1,4 +1,4 @@
-/* подключение шрифтов */
+/* Подключение шрифтов */
 @font-face {
   font-family: "Inter";
   src: url("../fonts/inter-400.woff2") format("woff2");
@@ -23,7 +23,7 @@
   font-display: swap;
 }
 
-/* скрытие семантических тегов */
+/* Скрытие семантических тегов */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,7 +37,7 @@
   overflow: hidden;
 }
 
-/* СТИЛИЗАЦИЯ */
+/* Стилизация главных тегов */
 html {
   height: 100%;
 }
@@ -54,7 +54,26 @@ body {
   background-color: #FEAFC3;
 }
 
-/* сетка */
+/* Ссылки и кнопки */
+.common-link { /* Общие стили для ссылок */
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-btn { /* свойства основных кнопок и ссылок */
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.form-btn { /* свойства кнопок и ссылок в формах */
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+/* Сетка */
 .container {
   margin: 0 auto;
   width: 1366px;
@@ -68,51 +87,28 @@ body {
   flex-grow: 1;
 }
 
-/* общие стили для ссылок */
-.common-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* изображения на главной */
-.about {
-  background: url("../images/wafer-border.png") no-repeat;
-  width: 1170px;
-  min-height: 480px;
-  border-radius: 16px;
-}
-
-.article {
-  background: url("../images/news.png") no-repeat;
-  width: 570px;
-  min-height: 224px;
-  border-radius: 16px;
-}
-
-.newsletter {
-  background: url("../images/mail-border.png") no-repeat;
-  width: 570px;
-  min-height: 224px;
-  border-radius: 16px;
-}
-
-.delivery {
-  background: url("../images/delivery.png") no-repeat;
-  width: 1170px;
-  min-height: 534px;
-  border-radius: 16px;
-}
-
-.contacts {
-  background: url("../images/contacts.png") no-repeat;
-  width: 1170px;
-  min-height: 492px;
-  border-radius: 16px;
-}
-
-/* шрифты на главной */
+/* HEADER */
+/* navigation */
 .nav {
+  display: flex;
+  justify-content: space-between;
+
   line-height: 20px;
+}
+
+.nav-container-left {
+  display: flex;
+  min-width: 575px;
+}
+
+.nav-container-right {
+  display: flex;
+  min-width: 431px;
+}
+
+.nav-list, .nav-tel, .nav-logo {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-tel {
@@ -123,6 +119,47 @@ body {
   font-size: 14px;
 }
 
+/* ГЛАВНАЯ СТРАНИЦА */
+/* MAIN */
+.gifts-title,
+.fillings-title,
+.about-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.filling-title,
+.card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.filling-desc,
+.card-desc {
+  text-align: center;
+  color: #565C66;
+}
+
+.filling-price,
+.card-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-desc,
+.newsletter-desc,
+.delivery-desc,
+.delivery-form-desc,
+.contacts-address-desc { /* общий цвет у описаний */
+  color: #565C66;
+}
+
+/* section - slider */
 .slider-list-title {
   font-weight: 900;
   font-size: 36px;
@@ -134,45 +171,29 @@ body {
   line-height: 24px;
 }
 
-.main-btn {
-  font-weight: 700;
-  line-height: 20px;
-  text-align: center;
-}
+/* section - gift */
 
-.gifts-title, .fillings-title, .about-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-}
-
+/* section - filling */
 .gift-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
-.filling-title, .card-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
+/* section - about */
+.about {
+  background: url("../images/wafer-border.png") no-repeat;
+  width: 1170px;
+  min-height: 480px;
+  border-radius: 16px;
 }
 
-.filling-desc, .card-desc {
-  text-align: center;
-  color: #565C66;
-}
-
-.filling-price, .card-price {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.about-desc, .newsletter-desc, .delivery-desc, .delivery-form-desc, .contacts-address-desc {
-  color: #565C66;
+/* article - news */
+.article {
+  background: url("../images/news.png") no-repeat;
+  width: 570px;
+  min-height: 224px;
+  border-radius: 16px;
 }
 
 .article-news {
@@ -188,11 +209,19 @@ body {
   line-height: 30px;
 }
 
-.form-btn {
-  font-weight: 700;
-  line-height: 20px;
-  text-align: center;
-  color: #FCFCFC;
+.newsletter {
+  background: url("../images/mail-border.png") no-repeat;
+  width: 570px;
+  min-height: 224px;
+  border-radius: 16px;
+}
+
+/* section - delivery */
+.delivery {
+  background: url("../images/delivery.png") no-repeat;
+  width: 1170px;
+  min-height: 534px;
+  border-radius: 16px;
 }
 
 .delivery-title {
@@ -204,6 +233,14 @@ body {
 .delivery-form-label {
   font-weight: 700;
   line-height: 20px;
+}
+
+/* section - contacts */
+.contacts {
+  background: url("../images/contacts.png") no-repeat;
+  width: 1170px;
+  min-height: 492px;
+  border-radius: 16px;
 }
 
 .contacts-address {
@@ -228,21 +265,7 @@ body {
   color: #565C66;
 }
 
-.footer-menu-item {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.footer-menu-item-b {
-  font-weight: 700;
-}
-
-.copyright-text {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-/* шрифты в каталоге */
+/* КАТАЛОГ */
 .breadcrumbs-item, .filter-btn {
   font-weight: 700;
   font-size: 14px;
@@ -267,4 +290,19 @@ body {
 .pagination-item {
   font-size: 16px;
   line-height: 20px;
+}
+
+/* FOOTER */
+.footer-menu-item {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-menu-item-b {
+  font-weight: 700;
+}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 16px;
 }
