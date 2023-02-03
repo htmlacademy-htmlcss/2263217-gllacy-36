@@ -23,7 +23,7 @@
   font-display: swap;
 }
 
-/* скрытие семантических тегов
+/* скрытие семантических тегов */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,7 +35,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 /* стилизация */
 body {
@@ -54,27 +54,37 @@ body {
 /* изображения на главной */
 .about {
   background: url("../images/wafer-border.png") no-repeat;
-  background-size: 100% auto;
+  width: 1170px;
+  min-height: 480px;
+  border-radius: 16px;
 }
 
 .article {
   background: url("../images/news.png") no-repeat;
-  background-size: 100% auto;
+  width: 570px;
+  min-height: 224px;
+  border-radius: 16px;
 }
 
 .newsletter {
   background: url("../images/mail-border.png") no-repeat;
-  background-size: 100% auto;
+  width: 570px;
+  min-height: 224px;
+  border-radius: 16px;
 }
 
 .delivery {
   background: url("../images/delivery.png") no-repeat;
-  background-size: 100% auto;
+  width: 1170px;
+  min-height: 534px;
+  border-radius: 16px;
 }
 
 .contacts {
   background: url("../images/contacts.png") no-repeat;
-  background-size: 100% auto;
+  width: 1170px;
+  min-height: 492px;
+  border-radius: 16px;
 }
 
 /* шрифты на главной */
@@ -234,4 +244,10 @@ body {
 .pagination-item {
   font-size: 16px;
   line-height: 20px;
+}
+
+/* сетка */
+.container {
+  margin: 0 auto;
+  width: 1366px;
 }
