@@ -37,15 +37,38 @@
   overflow: hidden;
 }
 
-/* стилизация */
+/* СТИЛИЗАЦИЯ */
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
+
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
+
   color: #2D3440;
   background-color: #FEAFC3;
 }
 
+/* сетка */
+.container {
+  margin: 0 auto;
+  width: 1366px;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-index {
+  flex-grow: 1;
+}
+
+/* общие стили для ссылок */
 .common-link {
   text-decoration: none;
   color: inherit;
@@ -219,7 +242,7 @@ body {
   line-height: 16px;
 }
 
-/* каталог */
+/* шрифты в каталоге */
 .breadcrumbs-item, .filter-btn {
   font-weight: 700;
   font-size: 14px;
@@ -244,10 +267,4 @@ body {
 .pagination-item {
   font-size: 16px;
   line-height: 20px;
-}
-
-/* сетка */
-.container {
-  margin: 0 auto;
-  width: 1366px;
 }
