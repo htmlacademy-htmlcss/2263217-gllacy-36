@@ -343,18 +343,46 @@ body {
 
 /* section - about */
 .about {
-  background: url("../images/wafer-border.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: url("../images/wafer-border.png") top center / 1170px 480px no-repeat;
+  border-radius: 16px;
+
   width: 1170px;
   min-height: 480px;
-  border-radius: 16px;
+}
+
+.about-title {
+  margin: 80px 0 56px;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 32px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.about-item {
+  height: 66px;
+}
+
+.about-desc {
+  width: 442px;
 }
 
 /* article - news */
 .article {
   background: url("../images/news.png") no-repeat;
+  border-radius: 16px;
+
   width: 570px;
   min-height: 224px;
-  border-radius: 16px;
 }
 
 .article-news {
