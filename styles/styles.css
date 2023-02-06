@@ -274,6 +274,10 @@ body {
 .gift-title {
   margin-top: 0;
   margin-bottom: 28px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .gift-desc {
@@ -288,10 +292,53 @@ body {
 }
 
 /* section - filling */
-.gift-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+
+.filling-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.filling-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 270px;
+  height: 332px;
+
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+.filling-image {
+  margin-bottom: 16px;
+}
+
+.filling-title {
+  margin: 0 0 8px;
+}
+
+.filling-desc {
+  width: 190px;
+  height: 44px;
+  margin: 0 0 16px;
+
+  text-align: center;
+}
+
+.filling-price {
+  margin: 0;
+  align-items: flex-start;
+  width: 120px;
+}
+
+.filling-box {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* section - about */
