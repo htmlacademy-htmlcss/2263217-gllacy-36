@@ -142,6 +142,11 @@ body {
 
 /* ГЛАВНАЯ СТРАНИЦА */
 /* MAIN */
+
+.slider, .gift, .filling, .about, .news, .delivery  {
+  margin-bottom: 80px;
+}
+
 .gifts-title,
 .fillings-title,
 .about-title {
@@ -250,6 +255,8 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 28px;
+
+  padding: 0;
 }
 
 .gift-item {
@@ -377,6 +384,14 @@ body {
 }
 
 /* article - news */
+
+.news {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
 .article {
   background: url("../images/news.png") no-repeat;
   border-radius: 16px;
@@ -417,6 +432,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
 }
 
 .delivery-form-label {
@@ -482,6 +498,33 @@ body {
 }
 
 /* FOOTER */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 259px;
+
+  height: 153px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 356px;
+}
+
 .footer-menu-item {
   font-size: 14px;
   line-height: 20px;
@@ -491,7 +534,17 @@ body {
   font-weight: 700;
 }
 
+.copyright {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 193px;
+}
+
 .copyright-text {
   font-size: 12px;
   line-height: 16px;
+
+  margin: 0;
 }
