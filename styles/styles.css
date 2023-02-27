@@ -394,6 +394,10 @@ body {
   border-radius: 8px;
 }
 
+.fillings-title {
+  margin: 0 0 56px;
+}
+
 .filling-image {
   margin-bottom: 16px;
 }
@@ -410,15 +414,22 @@ body {
   text-align: center;
 }
 
+.filling-box {
+  display: flex;
+
+  width: 190px;
+}
+
 .filling-price {
   margin: 0;
   align-items: flex-start;
   width: 120px;
+  margin-right: 73px;
 }
 
-.filling-box {
-  display: flex;
-  justify-content: space-between;
+.filling-shop-cart {
+  width: 32px;
+  height: 32px;
 }
 
 /* section - about */
