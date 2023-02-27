@@ -29,10 +29,8 @@
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
+  border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -108,18 +106,29 @@ body {
   padding: 0;
 }
 
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .nav-container-left {
   display: flex;
   min-width: 575px;
   align-items: center;
 }
 
-.nav-logo {
-  margin-right: 32px;
+.nav-logo, .nav-item, .nav-tel {
+  margin-right: 16px;
 }
 
-.nav-item, .nav-tel {
-  margin-right: 16px;
+.nav-link {
+  padding: 8px 16px;
+  display: block;
+}
+
+.nav-item {
+  margin: 0 16px 0 0;
 }
 
 .nav-item:last-child {
@@ -134,10 +143,40 @@ body {
 
 .nav-tel {
   font-weight: 700;
+  padding: 6px 0;
 }
 
 .nav-user {
   font-size: 14px;
+}
+
+.nav-link-search {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 88px;
+  height: 32px;
+  padding: 6px 16px;
+  box-sizing: border-box;
+}
+
+.nav-link-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 115px;
+  height: 32px;
+  padding: 6px 16px;
+  box-sizing: border-box;
 }
 
 /* ГЛАВНАЯ СТРАНИЦА */
