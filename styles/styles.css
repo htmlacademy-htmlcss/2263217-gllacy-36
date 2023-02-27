@@ -61,6 +61,11 @@ body {
 .main-btn { /* свойства основных кнопок и ссылок */
   padding: 12px 32px;
 
+  background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+
   font-weight: 700;
   line-height: 20px;
   text-align: center;
@@ -273,18 +278,6 @@ body {
   width: 429px;
 }
 
-.slide-list-button {
-  background-color: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
-  border-radius: 26px;
-
-  box-sizing: border-box;
-  width: 139px;
-  height: 44px;
-  display: block;
-}
-
 .slider-main-image {
   margin-right: 37px;
 }
@@ -327,6 +320,11 @@ body {
 
 /* section - gift */
 
+.gift {
+  min-height: 416px;
+  margin-bottom: 55px;
+}
+
 .gift-list {
   display: flex;
   justify-content: space-between;
@@ -351,7 +349,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 
-  margin: 36px 0 36px 36px;
+  margin: 36px 11px 36px 36px;
 }
 
 .gift-title {
