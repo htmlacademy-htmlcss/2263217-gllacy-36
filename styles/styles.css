@@ -59,6 +59,8 @@ body {
 }
 
 .main-btn { /* свойства основных кнопок и ссылок */
+  padding: 12px 32px;
+
   font-weight: 700;
   line-height: 20px;
   text-align: center;
@@ -230,11 +232,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
+
+  min-height: 554px;
 }
 
 .slider-list, .slider-pagination, .social-list {
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .slider-list {
@@ -248,6 +254,7 @@ body {
 
 .slider-list-title {
   width: 470px;
+  margin: 0 0 24px 0;
 
   font-weight: 900;
   font-size: 36px;
@@ -256,6 +263,7 @@ body {
 
 .slider-list-desc {
   width: 414px;
+  margin: 0 0 48px 0;
 
   font-size: 18px;
   line-height: 24px;
@@ -265,8 +273,28 @@ body {
   width: 429px;
 }
 
+.slide-list-button {
+  background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+
+  box-sizing: border-box;
+  width: 139px;
+  height: 44px;
+  display: block;
+}
+
+.slider-main-image {
+  margin-right: 37px;
+}
+
 .slider-image {
   opacity: 0.4;
+}
+
+.slider-image-1 {
+  margin-right: 41px;
 }
 
 .slider-box {
@@ -276,14 +304,23 @@ body {
 
 .social-list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   width: 104px;
 }
 
+.social-item {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .slider-pagination {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   width: 52px;
 }
@@ -341,7 +378,6 @@ body {
 
 .filling-list {
   display: flex;
-  flex-direction: row;
   gap: 30px;
 
   padding: 0;
@@ -589,14 +625,6 @@ body {
   gap: 259px;
 
   height: 153px;
-}
-
-.social-list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
 }
 
 .footer-menu-list {
