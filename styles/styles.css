@@ -544,22 +544,50 @@ body {
 
 /* section - delivery */
 .delivery {
+  display: flex;
+
   background: url("../images/delivery.png") no-repeat;
   width: 1170px;
   min-height: 534px;
   border-radius: 16px;
 }
 
+.delivery-box {
+  margin: 167px 135px auto 100px;
+}
+
 .delivery-title {
+  width: 356px;
+  margin: 0;
+
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 0;
+}
+
+.delivery-desc {
+  width: 371px;
+}
+
+.delivery-form {
+  align-self: center;
+
+  width: 500px;
+  height: 406px;
+
+  background: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
 }
 
 .delivery-form-label {
   font-weight: 700;
   line-height: 20px;
+}
+
+.delivery-form-btn {
+  width: 152px;
+  height: 44px;
 }
 
 /* section - contacts */
