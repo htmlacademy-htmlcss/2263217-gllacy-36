@@ -592,20 +592,47 @@ body {
 
 /* section - contacts */
 .contacts {
+  padding: 0;
+
   background: url("../images/contacts.png") no-repeat;
   width: 1170px;
   min-height: 492px;
   border-radius: 16px;
 }
 
+.contacts-box {
+  display: inline-block;
+  width: 343px;
+  height: 364px;
+  margin: 64px 763px 64px 64px;
+
+  background: #FCFCFC;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
 .contacts-address {
+  margin-top: 40px;
+  margin-left: 40px;
+
   font-style: normal;
 }
 
+.contacts-address-desc {
+  margin: 0 124px 12px 0;
+}
+
 .contacts-address-data {
+  margin-top: 0;
+  margin-bottom: 24px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.contacts-desc-tel {
+  margin: 0 0 12px;
 }
 
 .contacts-tel {
@@ -615,9 +642,23 @@ body {
 }
 
 .contacts-desc {
+  margin: 0 0 32px 40px;
+
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+}
+
+.form-link {
+  display: block;
+  margin-left: 40px;
+  padding: 12px 32px;
+
+  width: 250px;
+  height: 44px;
+  box-sizing: border-box;
+
+  font-size: 14px;
 }
 
 /* КАТАЛОГ */
