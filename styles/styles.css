@@ -736,8 +736,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0;
+  padding: 48px 0 0;
   gap: 259px;
 
   height: 153px;
@@ -747,11 +746,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  column-gap: 24px;
+  row-gap: 8px;
 
   width: 356px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .footer-menu-item {
+  min-width: 126px;
+
   font-size: 14px;
   line-height: 20px;
 }
@@ -762,10 +770,14 @@ body {
 
 .copyright {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
 
-  width: 193px;
+  width: 194px;
+  height: 57px;
+}
+
+.logo-htmlacademy {
+  margin-bottom: 14px;
 }
 
 .copyright-text {
