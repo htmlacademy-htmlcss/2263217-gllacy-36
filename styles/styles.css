@@ -421,15 +421,13 @@ body {
 
 .filling-box {
   display: flex;
+  justify-content: space-between;
 
   width: 190px;
 }
 
 .filling-price {
   margin: 0;
-  align-items: flex-start;
-  width: 120px;
-  margin-right: 73px;
 }
 
 .filling-shop-cart {
@@ -794,6 +792,34 @@ body {
 
   background-color: #FCFCFC;
   border-radius: 8px;
+}
+
+.card-image {
+  padding: 0 51px;
+}
+
+.card-title {
+  margin: 16px 0 8px 0;
+}
+
+.card-desc {
+  margin: 0 0 16px;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+
+  width: 190px;
+}
+
+.card-price {
+  margin: 0;
+}
+
+.card-button {
+  width: 32px;
+  height: 32px;
 }
 
 .pagination {
