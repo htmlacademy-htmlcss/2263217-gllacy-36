@@ -580,9 +580,37 @@ body {
   border-radius: 8px;
 }
 
+.delivery-form-desc {
+  margin: 40px 80px 32px 40px;
+}
+
+.delivery-form-box {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+
+  margin: 0 40px 0;
+}
+
 .delivery-form-label {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
   font-weight: 700;
   line-height: 20px;
+}
+
+.delivery-form-label:last-of-type {
+  grid-column: 1 / -1;
+}
+
+.delivery-form-btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+
+  margin-top: 12px;
 }
 
 .delivery-form-btn {
