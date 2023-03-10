@@ -70,6 +70,29 @@ body {
   text-align: center;
 }
 
+.main-btn:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 4px #FCFCFC;
+}
+
+.main-btn:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.main-btn:active {
+  background-color: #FCFCFC;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.main-btn:disabled {
+  background-color: #E7E7E7;
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
+  color: #B9B9B9;
+
+  font-weight: 400;
+}
+
 .form-btn { /* свойства кнопок и ссылок в формах */
   background: #FF2F64;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.4);
@@ -83,6 +106,31 @@ body {
   color: #FCFCFC;
 }
 
+.form-btn:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 4px #FF2F64;
+  color: #2D3440;
+}
+
+.form-btn:focus {
+  background-color: #FF2F64;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.form-btn:active {
+  background-color: #FEAFC3;
+  box-shadow: 0 0 0 2px #2D3440;
+  color: #FCFCFC;
+}
+
+.form-btn:disabled {
+  background-color: #B9B9B9;
+  box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3);
+
+  font-weight: 400;
+  color: #565C66;
+}
+
 .filter-btn {
   padding: 8px 52px;
 
@@ -94,6 +142,29 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-align: center;
+}
+
+.filter-btn:hover {
+  background-color: #FCFCFC;
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.3);
+}
+
+.filter-btn:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.filter-btn:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: none;
+}
+
+.filter:disabled {
+  background-color: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+  box-shadow: 0 0 0 2px #FCFCFC;
+
+  font-weight: 400;
 }
 
 /* Сетка */
@@ -346,6 +417,9 @@ body {
 }
 
 .filling-shop-cart {
+  width: 32px;
+  height: 32px;
+
   background-image: url("../images/Card-button.svg");
   background-repeat: no-repeat;
   background-color: #FF2F64;
@@ -604,11 +678,6 @@ body {
 
 .filling-price {
   margin: 0;
-}
-
-.filling-shop-cart {
-  width: 32px;
-  height: 32px;
 }
 
 /* section - about */
