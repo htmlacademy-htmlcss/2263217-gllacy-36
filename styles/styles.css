@@ -416,18 +416,6 @@ body {
   line-height: 24px;
 }
 
-.filling-shop-cart {
-  width: 32px;
-  height: 32px;
-
-  background-image: url("../images/Card-button.svg");
-  background-repeat: no-repeat;
-  background-color: #FF2F64;
-  background-position: center;
-
-  border-radius: 50%;
-}
-
 .about-desc,
 .newsletter-desc,
 .delivery-desc,
@@ -678,6 +666,64 @@ body {
 
 .filling-price {
   margin: 0;
+}
+
+.filling-shop-cart {
+  position: relative;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: #FF2F64;
+
+  border-radius: 50%;
+}
+
+.filling-shop-cart:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: inset 0 0 0 2px #FF2F64;
+}
+
+.filling-shop-cart:focus {
+  background-color: #FF2F64;
+  box-shadow: inset 0 0 0 2px #2D3440;
+}
+
+.filling-shop-cart:active {
+  background-color: #FFCBD8;
+  box-shadow: inset 0 0 0 2px #FF2F64;
+}
+
+.filling-shop-cart:disabled {
+  background-color: #B9B9B9;
+  box-shadow: none;
+}
+
+.filling-icon {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  fill: #FCFCFC;
+}
+
+.filling-shop-cart:hover .filling-icon {
+  fill: #2D3440;
+}
+
+.filling-shop-cart:focus .filling-icon{
+  fill: #FCFCFC;
+}
+
+.filling-shop-cart:active .filling-icon{
+  fill: #2D3440;
+}
+
+.filling-shop-cart:disabled .filling-icon{
+  fill: #565C66;
 }
 
 /* section - about */
@@ -1208,18 +1254,6 @@ body {
 
 .card-price {
   margin: 0;
-}
-
-.card-button {
-  width: 32px;
-  height: 32px;
-
-  background-image: url("../images/Card-button.svg");
-  background-repeat: no-repeat;
-  background-color: #FF2F64;
-  background-position: center;
-
-  border-radius: 50%;
 }
 
 .pagination {
