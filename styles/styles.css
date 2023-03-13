@@ -219,6 +219,8 @@ body {
 }
 
 .nav-item {
+  position: relative;
+
   border-radius: 30px;
 }
 
@@ -377,6 +379,130 @@ body {
   margin: auto 0;
 
   fill: #2D3440;
+}
+
+.popover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 40px;
+  right: 0;
+
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+
+  font-family: "Inter", sans-serif;
+
+  z-index: 1;
+}
+
+.popover-cart {
+  width: 442px;
+  min-height: 156px;
+  padding: 48px;
+}
+
+.popover-title {
+  align-self: self-start;
+  margin: 0 0 32px 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  font-weight: 700;
+}
+
+.popover-cart-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popover-cart-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.popover-ice-cream-img {
+  margin-right: 16px;
+  object-fit: contain;
+}
+
+.popover-ice-cream-title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  min-width: 150px;
+}
+
+.popover-ice-cream-desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: #b9b9b9;
+  margin: 0;
+}
+
+.close-btn {
+  position: absolute;
+  padding: 0;
+  top: 16px;
+  right: 0;
+  width: 16px;
+  height: 30px;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  background-color: #fcfcfc;
+}
+
+.popover-cart-item:last-child {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 32px;
+}
+
+.popover-btn {
+  padding: 12px 32px;
+  margin-right: 32px;
+}
+
+.popover-ice-cream-price {
+  min-width: 120px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 6px 0;
+}
+
+.popover-total-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.popover-empty-cart {
+  width: 288px;
+  padding: 48px 0;
+
+  display: none;
+}
+
+.popover-title-center {
+  margin: 0;
+  text-align: center;
 }
 
 /* ГЛАВНАЯ СТРАНИЦА */
