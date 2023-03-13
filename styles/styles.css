@@ -421,6 +421,8 @@ body {
   fill: #2D3440;
 }
 
+/* ПОПОВЕРЫ НАВИГАЦИИ */
+
 .popover {
   padding: 0;
   box-sizing: border-box;
@@ -521,6 +523,46 @@ body {
 
 .input-search:not(:placeholder-shown) + .clear {
   display: block;
+}
+
+.popover-enter {
+  width: 420px;
+  padding: 48px 48px 52px 48px;
+
+  display: none;
+}
+
+.enter:hover .popover-enter {
+  display: block;
+}
+
+.enter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.enter-links {
+  display: flex;
+  margin-top: 16px;
+}
+
+.enter-btn {
+  padding: 12px 32px;
+  margin-right: 23px;
+}
+
+.enter-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.enter-link-text {
+  color: #2D3440;
+
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .popover-cart {
