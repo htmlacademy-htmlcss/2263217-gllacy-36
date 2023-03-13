@@ -382,11 +382,6 @@ body {
 }
 
 .popover {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   padding: 0;
   box-sizing: border-box;
   position: absolute;
@@ -406,6 +401,8 @@ body {
   width: 442px;
   min-height: 156px;
   padding: 48px;
+
+  display: none;
 }
 
 .popover-title {
