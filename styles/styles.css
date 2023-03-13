@@ -167,6 +167,46 @@ body {
   font-weight: 400;
 }
 
+/* ОБЩИЕ ПРАВИЛА ДЛЯ ПОЛЕЙ ФОРМ */
+
+.field {
+  box-sizing: border-box;
+  padding: 14px 0 14px 16px;
+
+  background-color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+
+  font-family: 'Inter';
+  font-size: 16px;
+}
+
+.field:hover {
+  border: 1px solid #2D3440;
+}
+
+.field:focus {
+  box-shadow: inset 0 0 0 1px #2D3440;
+}
+
+.field:disabled {
+  border: 1px solid #B9B9B9;
+  background-color: #E7E7E7;
+  opacity: 0.65;
+}
+
+.field:disabled:hover {
+  opacity: 1;
+}
+
+.field:invalid {
+  border: 1px solid #EA5454;
+}
+
+.field:invalid:hover {
+  box-shadow: inset 0 0 0 1px #EA5454;
+}
+
 /* Сетка */
 .container {
   margin: 0 auto;
@@ -395,6 +435,49 @@ body {
   font-family: "Inter", sans-serif;
 
   z-index: 1;
+}
+
+.popover-search {
+  width: 356px;
+
+  display: none;
+}
+
+.input-search {
+  position: relative;
+
+  margin: 24px 16px;
+  width: 324px;
+}
+
+.input-search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.input-search:hover, .input-search:focus {
+  border: 1px solid #B9B9B9;
+  box-shadow: none;
+}
+
+.clear {
+  position: absolute;
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 29px;
+  width: 16px;
+  height: 16px;
+
+  cursor: pointer;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  border: 0;
+}
+
+.input-search:not(:placeholder-shown) + .clear {
+  display: block;
 }
 
 .popover-cart {
@@ -1182,46 +1265,6 @@ body {
 .newsletter-btn {
   width: 152px;
   min-height: 44px;
-}
-
-/* ОБЩИЕ ПРАВИЛА ДЛЯ ПОЛЕЙ ФОРМ */
-
-.field {
-  box-sizing: border-box;
-  padding: 14px 0 14px 16px;
-
-  background-color: #FFFFFF;
-  border: 1px solid #B9B9B9;
-  border-radius: 4px;
-
-  font-family: 'Inter';
-  font-size: 16px;
-}
-
-.field:hover {
-  border: 1px solid #2D3440;
-}
-
-.field:focus {
-  box-shadow: inset 0 0 0 1px #2D3440;
-}
-
-.field:disabled {
-  border: 1px solid #B9B9B9;
-  background-color: #E7E7E7;
-  opacity: 0.65;
-}
-
-.field:disabled:hover {
-  opacity: 1;
-}
-
-.field:invalid {
-  border: 1px solid #EA5454;
-}
-
-.field:invalid:hover {
-  box-shadow: inset 0 0 0 1px #EA5454;
 }
 
 /* section - delivery */
