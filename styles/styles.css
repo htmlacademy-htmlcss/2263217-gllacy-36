@@ -789,6 +789,7 @@ body {
 }
 
 .filling-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -796,8 +797,20 @@ body {
   width: 270px;
   height: 332px;
 
+}
+
+.filling-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  width: 270px;
+  height: 281px;
+
   background-color: #FCFCFC;
   border-radius: 8px;
+
+  z-index: -1;
 }
 
 .fillings-title {
@@ -891,6 +904,7 @@ body {
 
 /* section - about */
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -900,6 +914,22 @@ body {
 
   width: 1170px;
   min-height: 480px;
+
+  z-index: -2;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+
+  width: 1122px;
+  height: 432px;
+
+  background: #FFFFFF;
+  border-radius: 16px;
+
+  z-index: -1;
 }
 
 .about-title {
@@ -979,10 +1009,29 @@ body {
 }
 
 .newsletter {
+  position: relative;
+
   background: url("../images/mail-border.png") no-repeat;
   width: 570px;
   min-height: 224px;
   border-radius: 16px;
+
+  z-index: -2;
+}
+
+.newsletter::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: 558px;
+  height: 212px;
+
+  background: #FFFFFF;
+  border-radius: 16px;
+
+  z-index: -1;
 }
 
 .newsletter-desc {
@@ -995,7 +1044,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0 32px 32px;
-  gap: 24px;
+  gap: 14px;
 
   width: 506px;
   height: 52px;
@@ -1004,6 +1053,15 @@ body {
 .newsletter-input {
   width: 332px;
   min-height: 48px;
+  box-sizing: border-box;
+  padding-left: 16px;
+
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+
+  font-family: 'Inter';
+  font-size: 16px;
 }
 
 .newsletter-btn {
@@ -1382,15 +1440,27 @@ body {
 }
 
 .card-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   width: 270px;
   height: 332px;
+}
+
+.card-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  width: 270px;
+  height: 281px;
 
   background-color: #FCFCFC;
   border-radius: 8px;
+
+  z-index: -1;
 }
 
 .card-image {
