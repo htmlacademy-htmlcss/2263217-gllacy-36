@@ -2081,3 +2081,82 @@ body {
 
   margin: 0;
 }
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.modal-container-close {
+  display: none;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 64px 66px;
+
+  background-color: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.modal-feedback {
+  width: 570px;
+  box-sizing: border-box;
+}
+
+.modal-close-btn {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  margin: 32px 32px 12px 0;
+
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-desc {
+  margin: 0 0 32px;
+
+  color: #2D3440;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  appearance: none;
+}
+
+.feedback-field-text {
+  resize: none;
+  height: 149px;
+}
+
+.feedback-btn {
+  padding: 12px 32px;
+  margin-top: 16px;
+  align-self: flex-end;
+}

@@ -515,6 +515,26 @@
           <p class="copyright-text">Сделано в <a class="common-link" href="https://htmlacademy.ru/"><ins>.html academy</ins></a> © 2021</p>
         </section>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-feedback">
+          <button class="modal-close-btn">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="visually-hidden">Окно формы обратной связи.</h2>
+            <p class="modal-desc">Мы обязательно ответим вам!</p>
+            <form class="feedback-form"  action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="feedback-name">Имя и фамилия.</label>
+              <input class="field feedback-field" id="feedback-name" type="text" name="name" placeholder="Имя и фамилия" required>
+              <label class="visually-hidden" for="feedback-email">Электронная почта.</label>
+              <input class="field feedback-field" id="feedback-email" type="email" name="mail"  placeholder="email@example.com" required>
+              <textarea class="field feedback-field-text" name="comment" placeholder="В свободной форме" required></textarea>
+              <button class="form-btn feedback-btn">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
