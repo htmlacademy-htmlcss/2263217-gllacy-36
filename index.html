@@ -343,10 +343,10 @@
           </div>
           <div class="newsletter">
             <p class="newsletter-desc">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>
-              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="newsletter-form" action="#" method="post">
+              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно &#61;&#41;</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="input-id" class="visually-hidden">Поле ввода почты</label>
-              <input id="input-id" class="newsletter-input" type="email" name="mail" placeholder="email@example.com" required>
+              <input id="input-id" class="newsletter-input field" type="email" name="mail" placeholder="email@example.com" required>
               <button class="form-btn newsletter-btn" type="submit">Отправить</button>
             </form>
           </div>
@@ -362,9 +362,9 @@
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="delivery-form-desc">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <div class="delivery-form-box">
-              <label class="delivery-form-label">Дата<input type="text" name="date" placeholder="01.04.2020"></label>
-              <label class="delivery-form-label">Телефон<input type="tel" name="tel" placeholder="+7 800 999-00-00"></label>
-              <label class="delivery-form-label">Адрес<input type="text" name="address" placeholder="ул. Большая Конюшенная 19/8"></label>
+              <label class="delivery-form-label">Дата<input class="delivery-form-input field" type="text" name="date" placeholder="01.04.2020" required></label>
+              <label class="delivery-form-label">Телефон<input class="delivery-form-input field" type="tel" name="tel" placeholder="+7 800 999-00-00" required></label>
+              <label class="delivery-form-label">Адрес<input class="delivery-form-input field" type="text" name="address" placeholder="ул. Большая Конюшенная 19/8" required></label>
               <button class="form-btn delivery-form-btn" type="submit">Отправить</button>
           </div>
           </form>
