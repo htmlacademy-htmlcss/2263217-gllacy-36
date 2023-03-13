@@ -1446,6 +1446,17 @@ body {
   line-height: 20px;
 }
 
+.select-control:active {
+  background-color: rgb(252, 252, 252, 0.5);
+  border: none;
+}
+
+.select-control:focus {
+  background-color: rgb(252, 252, 252, 0.5);
+  border: none;
+  box-shadow: 0 0 0 2px #FCFCFC;;
+}
+
 .cost-range {
   appearance: none;
 }
