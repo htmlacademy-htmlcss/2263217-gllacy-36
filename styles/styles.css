@@ -1346,6 +1346,88 @@ body {
   margin: 0 0 8px 16px;
 }
 
+.cost-range {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+  background: rgba(254, 175, 195, 0.1);
+  width: 30px;
+}
+
+.range-style {
+  background: rgb(252, 252, 252, 30%);
+  border-radius: 20px;
+  width: 180px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.range-scale {
+  margin-top: 11px;
+  height: 2px;
+  width: 164px;
+  background-color: rgba(86, 92, 102, 0.3);
+  position: relative;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  left: 40px;
+  width: 56px;
+  height: 2px;
+
+  background-color: #565C66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+
+  box-shadow: inset 0 0 0 6px #2D3440;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  background-color: #FCFCFC;
+}
+
+.toggle-min {
+  top: -7px;
+  left: -8px;
+}
+
+.toggle-max {
+  top: -7px;
+  right: -8px;
+}
+
+.range-toggle:focus-visible {
+  background: #2d3440;
+  box-shadow: inset 0 0 0 6px #fcfcfc;
+  outline: 2px solid #2d3440;
+}
+
+.range-toggle:hover {
+  background: #2d3440;
+  box-shadow: inset 0 0 0 6px #fcfcfc;
+}
+
+.range-toggle:active {
+  background: #2d3440;
+  box-shadow: inset 0 0 0 6px #2d3440;
+}
+
+.cost-range::-webkit-outer-spin-button,
+.cost-range::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .select-control {
   appearance: none;
   border: none;
@@ -1386,19 +1468,26 @@ body {
 .control-input.radio {
   appearance: none;
 
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   padding: 0;
   margin: 0 8px 0 0;
 
   border-radius: 50%;
-  border: 1px solid #2D3440;
+  box-shadow: inset 0 0 0 1px #2D3440;
 }
 
-.point-check::before {
+.control:hover .radio {
+  box-shadow: inset 0 0 0 1px #FCFCFC;
+}
+
+.control-input:disabled + .radio {
+  box-shadow: inset 0 0 0 1px rgba(45, 52, 64, 0.4);
+}
+
+.control-input:checked + .point-check::before {
   content: "";
   position: absolute;
-  opacity: 0;
 
   width: 6px;
   height: 6px;
@@ -1409,8 +1498,12 @@ body {
   border-radius: 50%;
 }
 
-.control-input:checked + .point-check::before {
-  opacity: 1;
+.control-input:checked:hover + .point-check::before {
+  background-color: #FCFCFC;
+}
+
+.control-input:checked:disabled + .point-check::before {
+  background-color: rgba(45, 52, 64, 0.4);
 }
 
 .filter-filling {
@@ -1421,37 +1514,42 @@ body {
 .control-input.checkbox {
   appearance: none;
 
-  width: 16px;
-  height: 16px;
-  padding: 0;
   margin: 0 8px 0 0;
-
-  background-image: url("../images/checkbox.svg");
-  background-repeat: no-repeat;
-}
-
-.point-checkbox::before {
-  content: "";
-  position: absolute;
-  opacity: 0;
-
   width: 16px;
   height: 16px;
-  top: 2px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  background-image: url("../images/checkbox-checked.svg");
-  background-repeat: no-repeat;
 }
 
-.control-input:checked + .point-checkbox::before {
-  opacity: 1;
+.point-checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
 }
 
-.control-input:checked.checkbox {
-  opacity: 0;
+.checkbox-image-full {
+  display: none;
+  fill:#2D3440;
+}
+
+.checkbox:checked + .point-checkbox .checkbox-image-full{
+  display: block;
+}
+
+.checkbox-image-empty {
+  fill:#2D3440;
+}
+
+.checkbox:checked + .point-checkbox .checkbox-image-empty{
+  display: none;
+}
+
+.checkbox:checked:hover + .point-checkbox .checkbox-image-full,
+.checkbox:hover + .point-checkbox .checkbox-image-empty {
+  fill:#FCFCFC;
+}
+
+.checkbox:checked:disabled + .point-checkbox .checkbox-image-full,
+.checkbox:disabled + .point-checkbox .checkbox-image-empty {
+  opacity: 0.5;
 }
 
 .main-catalog-title {

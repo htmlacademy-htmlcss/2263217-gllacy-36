@@ -86,11 +86,34 @@
                 <option value="alphabet">по алфавиту</option>
               </select>
             </fieldset>
+
             <fieldset class="filter-group">
-              <legend class="filter-title">Цена: 100 ₽ – 500 ₽</legend>
-              <input class="cost-range" type="range" min="0" max="700" step="1" value="100">
-              <input class="cost-range" type="range" min="0" max="700" step="1" value="500">
+              <legend class="visually-hidden">Цена:</legend>
+              <div class="cost-range-box">
+                <span class="filter-title">Цена:</span>
+                <label class="filter-price">
+                  <input class="cost-range" type="number" value="100" name="min-price">
+                  ₽ -
+                </label>
+                <label class="filter-price">
+                  <input class="cost-range" type="number" value="500" name="max-price">
+                  ₽
+                </label>
+              </div>
+              <div class="range-style">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
+
             <fieldset class="filter-group">
               <legend class="filter-title">Жирность:</legend>
               <ul class="filter-group-list filter-fat">
@@ -120,41 +143,87 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="filter-group">
               <legend class="filter-title">Наполнители:</legend>
               <ul class="filter-group-list filter-filling">
                 <li class="filter-group-item">
                   <label class="control">
                     <input class="control-input checkbox" type="checkbox" name="chocolate" checked>
-                    <span class="point-checkbox">шоколадные</span>
+                    <span class="point-checkbox">
+                      <svg class="checkbox-image-empty" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28H13.7c.25 0 .34.03.4.06.05.02.13.07.28.23a.91.91 0 0 1 .29.68v11.37a.96.96 0 0 1-.97 1H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.23 12.93A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16.66.66 0 0 1 1.89 0H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63V14.1c0 .17-.06.32-.16.43Z"/>
+                      </svg>
+                      <svg class="checkbox-image-full" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28h8.96a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.2.33a.67.67 0 1 0-.96-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
+                      </svg>
+                    </span>
+                    <span>шоколадные</span>
                   </label>
                 </li>
+
                 <li class="filter-group-item">
                   <label class="control">
                     <input class="control-input checkbox" type="checkbox" name="sugar sprinkles" checked>
-                    <span class="point-checkbox">сахарные посыпки</span>
+                    <span class="point-checkbox">
+                      <svg class="checkbox-image-empty" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28H13.7c.25 0 .34.03.4.06.05.02.13.07.28.23a.91.91 0 0 1 .29.68v11.37a.96.96 0 0 1-.97 1H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.23 12.93A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16.66.66 0 0 1 1.89 0H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63V14.1c0 .17-.06.32-.16.43Z"/>
+                      </svg>
+                      <svg class="checkbox-image-full" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28h8.96a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.2.33a.67.67 0 1 0-.96-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
+                      </svg>
+                    </span>
+                    <span>сахарные посыпки</span>
                   </label>
                 </li>
+
                 <li class="filter-group-item">
                   <label class="control">
                     <input class="control-input checkbox" type="checkbox" name="fruit">
-                    <span class="point-checkbox">фрукты</span>
+                    <span class="point-checkbox">
+                      <svg class="checkbox-image-empty" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28H13.7c.25 0 .34.03.4.06.05.02.13.07.28.23a.91.91 0 0 1 .29.68v11.37a.96.96 0 0 1-.97 1H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.23 12.93A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16.66.66 0 0 1 1.89 0H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63V14.1c0 .17-.06.32-.16.43Z"/>
+                      </svg>
+                      <svg class="checkbox-image-full" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28h8.96a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.2.33a.67.67 0 1 0-.96-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
+                      </svg>
+                    </span>
+                    <span>фрукты</span>
                   </label>
                 </li>
+
                 <li class="filter-group-item">
                   <label class="control">
                     <input class="control-input checkbox" type="checkbox" name="syrups">
-                    <span class="point-checkbox">сиропы</span>
+                    <span class="point-checkbox">
+                      <svg class="checkbox-image-empty" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28H13.7c.25 0 .34.03.4.06.05.02.13.07.28.23a.91.91 0 0 1 .29.68v11.37a.96.96 0 0 1-.97 1H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.23 12.93A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16.66.66 0 0 1 1.89 0H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63V14.1c0 .17-.06.32-.16.43Z"/>
+                      </svg>
+                      <svg class="checkbox-image-full" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28h8.96a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.2.33a.67.67 0 1 0-.96-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
+                      </svg>
+                    </span>
+                    <span>сиропы</span>
                   </label>
                 </li>
+
                 <li class="filter-group-item">
                   <label class="control">
                     <input class="control-input checkbox" type="checkbox" name="jam">
-                    <span class="point-checkbox">джемы</span>
+                    <span class="point-checkbox">
+                      <svg class="checkbox-image-empty" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28H13.7c.25 0 .34.03.4.06.05.02.13.07.28.23a.91.91 0 0 1 .29.68v11.37a.96.96 0 0 1-.97 1H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.23 12.93A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16.66.66 0 0 1 1.89 0H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63V14.1c0 .17-.06.32-.16.43Z"/>
+                      </svg>
+                      <svg class="checkbox-image-full" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61 1.61a.96.96 0 0 1 .68-.28h8.96a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.28-.68Zm14.2.33a.67.67 0 1 0-.96-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
+                      </svg>
+                    </span>
+                    <span>джемы</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
+
             <button class="filter-btn" type="submit">Применить</button>
           </form>
         </section>
