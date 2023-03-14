@@ -689,7 +689,7 @@ body {
 .popover-cart {
   width: 442px;
   min-height: 156px;
-  padding: 48px;
+  padding: 48px 0 48px 48px;
 
   display: none;
 }
@@ -719,7 +719,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin: 0 48px 32px 0;
 }
 
 .popover-ice-cream-img {
@@ -764,7 +764,7 @@ body {
 
 .popover-btn {
   padding: 12px 32px;
-  margin-right: 32px;
+  margin-right: 28px;
 }
 
 .popover-ice-cream-price {
