@@ -861,7 +861,7 @@ body {
   margin-right: 8px;
 }
 
-.slider-pagination-itemlast-of-type {
+.slider-pagination-item:last-of-type {
   margin-right: 0;
 }
 
@@ -1139,7 +1139,9 @@ body {
   transform: rotate(180deg);
 }
 
-.slider-button:hover .slider-icon, .slider-button:focus .slider-icon, .slider-button:active .slider-icon {
+.slider-button:hover .slider-icon,
+.slider-button:focus .slider-icon,
+.slider-button:active .slider-icon {
   fill: #2D3440;
 }
 
