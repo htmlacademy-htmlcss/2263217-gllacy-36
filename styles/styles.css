@@ -425,12 +425,12 @@ body {
 
 /* АКТИВНЫЕ КНОПКИ */
 
-.nav-catalog-icon {
+.catalog:focus-within .nav-catalog-icon {
   transform: rotate(180deg);
   margin-top: 12px;
 }
 
-.nav-link-dropdown {
+.catalog:focus-within .nav-link-dropdown {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -451,11 +451,11 @@ body {
   opacity: 0.3;
 }
 
-.nav-search-icon {
+.search:focus-within .nav-search-icon {
   fill: #FCFCFC;
 }
 
-.nav-link-search {
+.search:focus-within .nav-link-search {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -476,7 +476,7 @@ body {
   opacity: 0.3;
 }
 
-.nav-link-login {
+.enter:focus-within .nav-link-login {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -497,7 +497,7 @@ body {
   opacity: 0.3;
 }
 
-.nav-link-cart {
+.cart:focus-within .nav-link-cart {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -547,7 +547,7 @@ body {
   display: none;
 }
 
-.catalog:hover .dropdown-menu {
+.catalog:focus-within .dropdown-menu {
   display: block;
 }
 
@@ -605,7 +605,7 @@ body {
   display: none;
 }
 
-.search:hover .popover-search {
+.search:focus-within .popover-search {
   display: block;
 }
 
@@ -653,7 +653,7 @@ body {
   display: none;
 }
 
-.enter:hover .popover-enter {
+.enter:focus-within .popover-enter {
   display: block;
 }
 
@@ -694,7 +694,7 @@ body {
   display: none;
 }
 
-.cart:hover .popover-cart {
+.cart:focus-within .popover-cart {
   display: block;
 }
 
@@ -1339,6 +1339,7 @@ body {
 
   background: url("../images/wafer-border.png") top center / 1170px 480px no-repeat;
   border-radius: 16px;
+  background-size: cover;
 
   width: 1170px;
   min-height: 480px;
@@ -1440,11 +1441,12 @@ body {
   position: relative;
 
   background: url("../images/mail-border.png") no-repeat;
+  background-size: cover;
   width: 570px;
   min-height: 224px;
   border-radius: 16px;
 
-  z-index: -2;
+  z-index: 0;
 }
 
 .newsletter::after {
