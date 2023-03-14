@@ -62,7 +62,8 @@ body {
   padding: 12px 32px;
 
   background-color: #FCFCFC;
-  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+              0 0 0 4px rgba(252, 252, 252, 0.4);
   border-radius: 26px;
 
   font-weight: 700;
@@ -95,7 +96,8 @@ body {
 
 .form-btn { /* свойства кнопок и ссылок в формах */
   background-color: #FF2F64;
-  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.4);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.4),
+              0 4px 12px rgba(45, 52, 64, 0.1);
   border: none;
   border-radius: 26px;
 
@@ -171,7 +173,7 @@ body {
 
 .field {
   box-sizing: border-box;
-  padding: 14px 0 14px 16px;
+  padding: 13px 0 13px 15px;
 
   background-color: #FFFFFF;
   border: 1px solid #B9B9B9;
@@ -896,13 +898,18 @@ body {
   margin-left: 70px;
 }
 
+.slider-list-wrap {
+  align-self: flex-start;
+  margin-top: 113px;
+}
+
 .slider-list-item {
   display: flex;
   align-items: center;
 }
 
 .slider-list-title {
-  width: 470px;
+  width: 455px;
   margin: 0 0 24px 0;
 
   font-weight: 900;
@@ -912,7 +919,7 @@ body {
 
 .slider-list-desc {
   width: 414px;
-  margin: 0 0 48px 0;
+  margin: 0 0 58px 0;
 
   font-size: 18px;
   line-height: 24px;
@@ -931,7 +938,7 @@ body {
   position: relative;
   margin-right: 37px;
   width: 367px;
-  height: 554px;
+  height: 507px;
 
   display: flex;
 }
@@ -1142,6 +1149,10 @@ body {
 
 .gift {
   min-height: 416px;
+  margin-bottom: 81px;
+}
+
+.gifts-title {
   margin-bottom: 55px;
 }
 
@@ -1233,6 +1244,9 @@ body {
 
 .filling-image {
   margin-bottom: 16px;
+  border-radius: 50%;
+
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .filling-title {
@@ -1443,6 +1457,7 @@ body {
   height: 212px;
 
   background: #FFFFFF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
 
   z-index: -1;
@@ -1454,11 +1469,10 @@ body {
 
 .newsletter-form {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0;
   margin: 0 32px 32px;
-  gap: 14px;
+  gap: 18px;
 
   width: 506px;
   height: 52px;
@@ -1491,7 +1505,7 @@ body {
 
 .delivery-title {
   width: 356px;
-  margin: 0;
+  margin: 0 0 24px;
 
   font-weight: 900;
   font-size: 32px;
@@ -1811,6 +1825,10 @@ body {
   list-style-type: none;
 }
 
+.cost-range-box {
+  margin-bottom: 8px;
+}
+
 .filter-title {
   margin: 0 0 8px 16px;
 }
@@ -1829,13 +1847,14 @@ body {
   background: rgb(252, 252, 252, 30%);
   border-radius: 20px;
   width: 180px;
+  height: 12px;
   padding-top: 8px;
   padding-left: 16px;
   padding-bottom: 16px;
 }
 
 .range-scale {
-  margin-top: 11px;
+  margin-top: 9px;
   height: 2px;
   width: 164px;
   background-color: rgba(86, 92, 102, 0.3);
@@ -1867,12 +1886,12 @@ body {
 
 .toggle-min {
   top: -7px;
-  left: -8px;
+  left: -16px;
 }
 
 .toggle-max {
   top: -7px;
-  right: -8px;
+  right: -16px;
 }
 
 .range-toggle:focus-visible {
@@ -1933,6 +1952,10 @@ body {
 .filter-fat {
   width: 383px;
   box-sizing: border-box;
+}
+
+.filter-filling .filter-group-item {
+  margin: 2px 0;
 }
 
 .filter-group-item:not(:last-child) {
@@ -2078,13 +2101,15 @@ body {
 }
 
 .card-image {
-  padding: 0 51px;
+  margin: 0 51px;
   object-fit: cover;
+
   border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .card-title {
-  margin: 16px 0 8px 0;
+  margin: 11px 0 8px 0;
 }
 
 .card-desc {
@@ -2270,7 +2295,7 @@ body {
 }
 
 .logo-htmlacademy {
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 }
 
 .copyright-text {
