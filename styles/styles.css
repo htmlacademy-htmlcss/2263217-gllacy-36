@@ -425,12 +425,12 @@ body {
 
 /* АКТИВНЫЕ КНОПКИ */
 
-.nav-catalog-icon {
+.catalog:focus-within .nav-catalog-icon {
   transform: rotate(180deg);
   margin-top: 12px;
 }
 
-.nav-link-dropdown {
+.catalog:focus-within .nav-link-dropdown {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -451,11 +451,11 @@ body {
   opacity: 0.3;
 }
 
-.nav-search-icon {
+.search:focus-within .nav-search-icon {
   fill: #FCFCFC;
 }
 
-.nav-link-search {
+.search:focus-within .nav-link-search {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -476,7 +476,7 @@ body {
   opacity: 0.3;
 }
 
-.nav-link-login {
+.enter:focus-within .nav-link-login {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -497,7 +497,7 @@ body {
   opacity: 0.3;
 }
 
-.nav-link-cart {
+.cart:focus-within .nav-link-cart {
   background-color: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
@@ -547,7 +547,7 @@ body {
   display: none;
 }
 
-.catalog:hover .dropdown-menu {
+.catalog:focus-within .dropdown-menu {
   display: block;
 }
 
@@ -605,7 +605,7 @@ body {
   display: none;
 }
 
-.search:hover .popover-search {
+.search:focus-within .popover-search {
   display: block;
 }
 
@@ -653,7 +653,7 @@ body {
   display: none;
 }
 
-.enter:hover .popover-enter {
+.enter:focus-within .popover-enter {
   display: block;
 }
 
@@ -689,12 +689,12 @@ body {
 .popover-cart {
   width: 442px;
   min-height: 156px;
-  padding: 48px;
+  padding: 48px 0 48px 48px;
 
   display: none;
 }
 
-.cart:hover .popover-cart {
+.cart:focus-within .popover-cart {
   display: block;
 }
 
@@ -719,7 +719,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin: 0 48px 32px 0;
 }
 
 .popover-ice-cream-img {
@@ -764,7 +764,7 @@ body {
 
 .popover-btn {
   padding: 12px 32px;
-  margin-right: 32px;
+  margin-right: 28px;
 }
 
 .popover-ice-cream-price {
@@ -861,7 +861,7 @@ body {
   margin-right: 8px;
 }
 
-.slider-pagination-itemlast-of-type {
+.slider-pagination-item:last-of-type {
   margin-right: 0;
 }
 
@@ -923,6 +923,8 @@ body {
 
   font-size: 18px;
   line-height: 24px;
+
+  word-wrap: break-word;
 }
 
 .slide-1 .slider-list-desc {
@@ -1137,7 +1139,9 @@ body {
   transform: rotate(180deg);
 }
 
-.slider-button:hover .slider-icon, .slider-button:focus .slider-icon, .slider-button:active .slider-icon {
+.slider-button:hover .slider-icon,
+.slider-button:focus .slider-icon,
+.slider-button:active .slider-icon {
   fill: #2D3440;
 }
 
@@ -1169,7 +1173,7 @@ body {
   justify-content: space-between;
 
   width: 570px;
-  height: 268px;
+  min-height: 268px;
 
   background-color: #FF7799;
   border-radius: 16px;
@@ -1197,6 +1201,8 @@ body {
 
   margin-top: 0;
   margin-bottom: 28px;
+
+  word-wrap: break-word;
 }
 
 .gift-image {
@@ -1258,6 +1264,7 @@ body {
   margin: 0 0 16px;
 
   text-align: center;
+  word-wrap: break-word;
 }
 
 .filling-box {
@@ -1337,8 +1344,9 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background: url("../images/wafer-border.png") top center / 1170px 480px no-repeat;
+  background: #EDE2C8 url("../images/wafer-border.png") top center / 1170px 480px no-repeat;
   border-radius: 16px;
+  background-size: cover;
 
   width: 1170px;
   min-height: 480px;
@@ -1352,9 +1360,9 @@ body {
   top: 24px;
 
   width: 1122px;
-  height: 432px;
+  height: 90%;
 
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 16px;
 
   z-index: -1;
@@ -1369,14 +1377,14 @@ body {
   flex-wrap: wrap;
   gap: 40px 32px;
 
-  margin: 0 0 0 64px;
+  margin: 0 0 80px 64px;
   padding: 0;
 
   list-style-type: none;
 }
 
 .about-item {
-  height: 66px;
+  min-height: 66px;
 }
 
 .about-desc {
@@ -1411,7 +1419,7 @@ body {
 }
 
 .article {
-  background: url("../images/news.png") no-repeat;
+  background: #FFFFFF url("../images/news.png") no-repeat;
   border-radius: 16px;
 
   width: 570px;
@@ -1439,12 +1447,13 @@ body {
 .newsletter {
   position: relative;
 
-  background: url("../images/mail-border.png") no-repeat;
+  background: #EDF1F5 url("../images/mail-border.png") no-repeat;
+  background-size: cover;
   width: 570px;
   min-height: 224px;
   border-radius: 16px;
 
-  z-index: -2;
+  z-index: 0;
 }
 
 .newsletter::after {
@@ -1454,9 +1463,9 @@ body {
   left: 6px;
 
   width: 558px;
-  height: 212px;
+  height: 94%;
 
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
 
@@ -1493,7 +1502,7 @@ body {
 .delivery {
   display: flex;
 
-  background: url("../images/delivery.png") no-repeat;
+  background: #F0EFF0 url("../images/delivery.png") no-repeat;
   width: 1170px;
   min-height: 534px;
   border-radius: 16px;
@@ -1666,7 +1675,7 @@ body {
 .contacts {
   padding: 0;
 
-  background: url("../images/contacts.png") no-repeat;
+  background: #E8DDDB url("../images/contacts.png") no-repeat;
   width: 1170px;
   min-height: 492px;
   border-radius: 16px;
@@ -1678,7 +1687,7 @@ body {
   min-height: 364px;
   margin: 64px 763px 64px 64px;
 
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
 }
@@ -1815,6 +1824,7 @@ body {
 
 .filter-group-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 8px 24px;
@@ -1839,12 +1849,12 @@ body {
   padding: 0;
   font: inherit;
   text-align: center;
-  background: rgba(254, 175, 195, 0.1);
+  background-color: rgba(254, 175, 195, 0.1);
   width: 30px;
 }
 
 .range-style {
-  background: rgb(252, 252, 252, 30%);
+  background-color: rgb(252, 252, 252, 30%);
   border-radius: 20px;
   width: 180px;
   height: 12px;
@@ -1895,18 +1905,18 @@ body {
 }
 
 .range-toggle:focus-visible {
-  background: #2d3440;
+  background-color: #2d3440;
   box-shadow: inset 0 0 0 6px #fcfcfc;
   outline: 2px solid #2d3440;
 }
 
 .range-toggle:hover {
-  background: #2d3440;
+  background-color: #2d3440;
   box-shadow: inset 0 0 0 6px #fcfcfc;
 }
 
 .range-toggle:active {
-  background: #2d3440;
+  background-color: #2d3440;
   box-shadow: inset 0 0 0 6px #2d3440;
 }
 
