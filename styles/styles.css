@@ -1853,6 +1853,16 @@ body {
   width: 30px;
 }
 
+.cost-range::-webkit-outer-spin-button,
+.cost-range::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cost-range {
+  -moz-appearance: textfield;
+}
+
 .range-style {
   background-color: rgb(252, 252, 252, 30%);
   border-radius: 20px;
@@ -1920,12 +1930,6 @@ body {
   box-shadow: inset 0 0 0 6px #2d3440;
 }
 
-.cost-range::-webkit-outer-spin-button,
-.cost-range::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
 .select-control {
   appearance: none;
   border: none;
@@ -1955,9 +1959,7 @@ body {
   box-shadow: 0 0 0 2px #FCFCFC;;
 }
 
-.cost-range {
-  appearance: none;
-}
+
 
 .filter-fat {
   width: 383px;
