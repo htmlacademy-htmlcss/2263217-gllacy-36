@@ -1233,7 +1233,6 @@ body {
 
   width: 270px;
   min-height: 332px;
-
 }
 
 .filling-item::before {
@@ -1243,7 +1242,6 @@ body {
   bottom: 0;
 
   width: 270px;
-  height: 85%;
 
   background-color: #FCFCFC;
   border-radius: 8px;
@@ -1263,12 +1261,12 @@ body {
 }
 
 .filling-title {
-  margin: 0 0 8px;
+  margin: 0 40px 8px;
 }
 
 .filling-desc {
   width: 190px;
-  margin: 0 0 16px;
+  margin: 0 40px 16px;
 
   text-align: center;
   word-wrap: break-word;
@@ -1972,6 +1970,8 @@ body {
 .filter-fat {
   width: 383px;
   box-sizing: border-box;
+
+  padding: 6px 24px;
 }
 
 .filter-group-item {
@@ -2109,7 +2109,6 @@ body {
   bottom: 0;
 
   width: 270px;
-  height: 85%;
 
   background-color: #FCFCFC;
   border-radius: 8px;
@@ -2118,7 +2117,7 @@ body {
 }
 
 .card-image {
-  margin: 0 51px;
+  margin: 0 51px 11px;
   object-fit: cover;
 
   border-radius: 50%;
@@ -2126,11 +2125,11 @@ body {
 }
 
 .card-title {
-  margin: 11px 0 8px 0;
+  margin: 0 40px 8px;
 }
 
 .card-desc {
-  margin: 0 0 16px;
+  margin: 0 40px 16px;
 }
 
 .card-box {
@@ -2139,6 +2138,7 @@ body {
   align-items: center;
 
   width: 190px;
+  margin: auto 0 24px;
 }
 
 .card-price {
