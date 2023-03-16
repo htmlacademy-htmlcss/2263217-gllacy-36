@@ -1970,6 +1970,8 @@ body {
 .filter-fat {
   width: 383px;
   box-sizing: border-box;
+
+  padding: 6px 24px;
 }
 
 .filter-group-item {
@@ -2115,7 +2117,7 @@ body {
 }
 
 .card-image {
-  margin: 0 51px 16px;
+  margin: 0 51px 11px;
   object-fit: cover;
 
   border-radius: 50%;
